@@ -1,0 +1,163 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure School Canteen Menu",
+        "description": "Configure the school canteen menu",
+        "data": {
+          "name": "Name",
+          "start_date": "Cycle start date (YYYY-MM-DD)",
+          "start_week": "Starting week",
+          "menu_name": "Menu name"
+        }
+      },
+      "upload": {
+        "title": "Upload Menu",
+        "description": "Paste the CSV content of the menu.\n\nFormat: week_number,week_day,[day_attrs...],main_course,[main_attrs...],second_course,[second_attrs...],side,[side_attrs...]\n\nweek_day uses numbers 1-7 (1=Monday, 7=Sunday)\nThe number of weeks is automatically detected from the CSV.",
+        "data": {
+          "menu_csv": "CSV content"
+        }
+      }
+    },
+    "error": {
+      "invalid_date": "Invalid date",
+      "invalid_week": "Invalid week",
+      "invalid_csv": "Invalid CSV file",
+      "start_week_exceeds_total": "Starting week exceeds the number of weeks in the menu",
+      "csv_required": "CSV content is required",
+      "unknown": "Unknown error"
+    },
+    "abort": {
+      "already_configured": "Already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "School Canteen Menu Options",
+        "description": "Select an action to perform",
+        "data": {
+          "action": "Action"
+        }
+      },
+      "add_closure_date": {
+        "title": "Add closure date",
+        "description": "Enter a single closure date",
+        "data": {
+          "closure_date": "Closure date (YYYY-MM-DD)"
+        }
+      },
+      "add_closure_period": {
+        "title": "Add closure period",
+        "description": "Enter the closure date range",
+        "data": {
+          "start_date": "Start date (YYYY-MM-DD)",
+          "end_date": "End date (YYYY-MM-DD)"
+        }
+      },
+      "delete_closure": {
+        "title": "Delete closures",
+        "description": "Select closures to delete",
+        "data": {
+          "closures_to_remove": "Closures to remove"
+        }
+      },
+      "add_restart": {
+        "title": "Add restart",
+        "description": "Set a new cycle restart date",
+        "data": {
+          "restart_date": "Restart date (YYYY-MM-DD)",
+          "restart_week": "Starting week"
+        }
+      },
+      "delete_restart": {
+        "title": "Delete restarts",
+        "description": "Select restarts to delete",
+        "data": {
+          "restarts_to_remove": "Restarts to remove"
+        }
+      },
+      "edit_menu": {
+        "title": "Edit menu",
+        "description": "Select a menu to edit",
+        "data": {
+          "menu_id": "Menu"
+        }
+      },
+      "edit_menu_details": {
+        "title": "Edit menu details",
+        "description": "Edit the selected menu details. Leave CSV empty to keep current menu data.",
+        "data": {
+          "menu_name": "Menu name",
+          "effective_date": "Effective date (YYYY-MM-DD)",
+          "menu_csv": "New CSV content (optional)"
+        }
+      },
+      "add_menu": {
+        "title": "Add new menu",
+        "description": "Upload a new menu that will take effect from the specified date",
+        "data": {
+          "menu_name": "Menu name",
+          "effective_date": "Effective date (YYYY-MM-DD)",
+          "menu_csv": "CSV content"
+        }
+      }
+    },
+    "error": {
+      "invalid_date": "Invalid date",
+      "invalid_week": "Invalid week",
+      "invalid_csv": "Invalid CSV file",
+      "closure_date_already_configured": "This closure date already exists or falls within an existing closure period",
+      "closure_period_overlapping": "This period overlaps with an existing closure period",
+      "restart_date_already_configured": "A restart is already configured for this date",
+      "csv_required": "CSV content is required",
+      "end_before_start": "End date must be after start date"
+    },
+    "abort": {
+      "no_closures": "No closures configured",
+      "no_restarts": "No restarts configured",
+      "no_menus": "No menus configured",
+      "no_selection": "No selection made"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current_week": {
+        "name": "Current week"
+      },
+      "total_weeks": {
+        "name": "Weeks in cycle"
+      },
+      "day_today": {
+        "name": "Current day"
+      },
+      "day_next": {
+        "name": "Next valid day"
+      },
+      "main_course_today": {
+        "name": "Main course today"
+      },
+      "second_course_today": {
+        "name": "Second course today"
+      },
+      "side_today": {
+        "name": "Side dish today"
+      },
+      "fruit_today": {
+        "name": "Fruit today"
+      },
+      "main_course_next": {
+        "name": "Main course next day"
+      },
+      "second_course_next": {
+        "name": "Second course next day"
+      },
+      "side_next": {
+        "name": "Side dish next day"
+      },
+      "fruit_next": {
+        "name": "Fruit next day"
+      }
+    }
+  }
+}

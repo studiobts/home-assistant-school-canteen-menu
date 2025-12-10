@@ -1,0 +1,21 @@
+week_number,week_day,menu_type,main_course,main_calories,main_allergens,second_course,second_calories,second_allergens,side,side_calories,side_allergens,fruit,fruit_calories
+1,1,Standard,Pasta al pomodoro,320,gluten,Roast chicken,250,none,Boiled carrots,80,none,apple,50
+1,2,Standard,Pumpkin risotto,350,none,Omelette,200,eggs,Mixed salad,50,none,banana,60
+1,3,Standard,Pesto pasta,380,gluten dairy,Baked fish,220,fish,Roasted potatoes,150,none,orange,30
+1,4,Standard,Minestrone,180,celery,Meatballs,280,gluten eggs,Green beans,70,none,orange,30
+1,5,Standard,Pasta e fagioli,300,gluten,Fresh cheese,150,dairy,Fennel,40,none,apple,50
+2,1,Standard,Rice with tomato,310,none,Hamburger,300,gluten,Grilled zucchini,60,none,orange,30
+2,2,Standard,Pasta with ragu,400,gluten,Roast turkey,230,none,Peas,90,none,banana,60
+2,3,Light,Vegetable soup,150,celery,Fish sticks,240,gluten fish,Mashed potatoes,180,dairy,orange,30
+2,4,Standard,Butter parmesan pasta,350,gluten dairy,Breaded cutlet,320,gluten eggs,Gratinated carrots,100,dairy,orange,30
+2,5,Standard,Gnocchi with tomato,300,gluten,Tuna,200,fish,Green salad,30,none,apple,50
+3,1,Standard,Risotto with peas,340,none,Escalopes,260,none,Spinach,50,none,orange,30
+3,2,Standard,Pasta with zucchini,320,gluten,Lemon chicken,240,none,Roast potatoes,160,none,orange,30
+3,3,Light,Vegetable puree,140,celery,Cod,190,fish,Cauliflower,60,none,apple,50
+3,4,Special,Lasagna,450,gluten dairy eggs,Cooked ham,150,none,Julienne carrots,70,none,apple,50
+3,5,Standard,Tuna pasta,360,gluten fish,Hard boiled eggs,180,eggs,Green beans,70,none,banana,60
+4,1,Standard,Pumpkin rice,300,none,Beef strips,280,none,Mixed vegetables,80,none,orange,30
+4,2,Standard,Carbonara pasta,420,gluten eggs dairy,Chicken breast,220,none,Broccoli,55,none,banana,60
+4,3,Light,Barley soup,280,gluten,Plaice fillet,180,fish,Puree,170,dairy,apple,50
+4,4,Standard,Pasta with lentils,320,gluten,Meatloaf,300,gluten eggs,Carrots and potatoes,130,none,orange,30
+4,5,Standard,Chickpea soup,250,none,Vegetable omelette,190,eggs,Gratinated fennel,90,dairy,apple,50
