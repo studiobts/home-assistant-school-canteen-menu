@@ -72,8 +72,8 @@ async def ws_get_menus(
         closure_periods = []
         for period in coordinator.closure_periods:
             closure_periods.append({
-                "start": period.start,
-                "end": period.end,
+                "start": period.start.isoformat(),
+                "end": period.end.isoformat(),
             })
 
         # Build restarts
